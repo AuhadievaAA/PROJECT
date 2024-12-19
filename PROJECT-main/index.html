@@ -5,68 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <header><img src="images/L_height.webp" width="200">
-        <h1>Здоровый хвостик</h1>
-        <nav>
-            <lo>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="servise.html">Услуги</a></li>
-                <li><a href="doctors.html">Врачи</a></li>
-                <li><a href="catalog.html">Отзывы</a></li>
-                <li><a href="#">Скидки</a></li>
-                <li><a href="#">Прайс-лист</a></li>
-                <li><a href="#">О-нас</a></li>
-                <li><a href="#">Контакты</a></li>
+<body class="page">
+    <header class="page__header header">
+        <img class="header__logo" src="images/L_height.webp" width="200">
+        <h1 class="header__title">Здоровый хвостик</h1>
+        <nav class="header__nav">
+            <lo class="header__nav-list">
+                <li class="header__nav-list"><a href="index.html">Главная</a></li>
+                <li class="header__nav-list"><a href="servise.html">Услуги</a></li>
+                <li class="header__nav-list"><a href="doctors.html">Врачи</a></li>
+                <li class="header__nav-list"><a href="catalog.html">Отзывы</a></li>
+                <li class="header__nav-list"><a href="#">Скидки</a></li>
+                <li class="header__nav-list"><a href="#">Прайс-лист</a></li>
+                <li class="header__nav-list"><a href="#">О-нас</a></li>
+                <li class="header__nav-list"><a href="#">Контакты</a></li>
             </lo>
         </nav>
         <a href="#">Вход</a>
         <a href="#">Регистрация</a>
     </header>
 
-    <main>
-        <section>
-            <h2> Наши преимущества</h2>
-            <ul>
-                <li>Высококласные врачи</li>
-                <li>Точная диагностика</li>
-                <li>современная лаборатория</li>
-                <li>Стационарное лечение</li>
-                <li>Ветеринарная скорая</li>
-                <li>Проведение тяжелых операций</li>
+    <main class="main">
+        <section class="our-advantages">
+            <h2 class="our-advantages__title"> Наши преимущества</h2>
+            <ul class="our-advantages__list">
+                <li class="our-advantages__item">Высококласные врачи</li>
+                <li class="our-advantages__item">Точная диагностика</li>
+                <li class="our-advantages__item">современная лаборатория</li>
+                <li class="our-advantages__item">Стационарное лечение</li>
+                <li class="our-advantages__item">Ветеринарная скорая</li>
+                <li class="our-advantages__item">Проведение тяжелых операций</li>
             </ul>
         </section>
 
-        <section>
-            <h2> Популярные услуги</h2>
-            <div>
+        <section class="popular-services">
+            <h2 class="popular-services__headig"> Популярные услуги</h2>
+            <div class="popular-services__description">
                 <img src="images/images.jpg" alt="images" width="150">
-                <p>Узи кошек и собак от 450 рублей</p>
+                <p class="popular-services__text">Узи кошек и собак от 450 рублей</p>
             </div>
-            <div>
+            <div class="popular-services__description">
                 <img src="images/bbb.jpg" alt="images"width=150>
-                <p>Вакцинация от 1230 рублей</p>
+                <p class="popular-services__text">Вакцинация от 1230 рублей</p>
             </div>
-            <div>
+            <div class="popular-services__description">
                 <img src="images/sss.jpg" alt="images"width=150>
-                <p>Кастрация и стерилизация от 1750 рублей</p>
+                <p class="popular-services__text">Кастрация и стерилизация от 1750 рублей</p>
             </div>
-            <button type="button">Смотреть все услуги и цены</button>
+            <button class="button" type="button">Смотреть все услуги и цены</button>
         </section>
-        <section>
-            <h2>Акции</h2>
-            <ul>
-                <li>Стань донором крови-получи акцию в подарок</li>
-                <li>Пройди обследование перед кастрацией и стирилезацией и получи скидку в 400 рублей!</li>
+        <section class="stock">
+            <h2 class="stock__title">Акции</h2>
+            <ul class="stock__list">
+                <li class="stock__item">Стань донором крови-получи акцию в подарок</li>
+                <li class="stock__item">Пройди обследование перед кастрацией и стирилезацией и получи скидку в 400 рублей!</li>
             </ul>
         </section>
-        <section>
-            <h2>Отзывы</h2>
-            <div>
-                <span>Олег</span>
-                <p>Хорошая клиника,всегда помогут и вылечат вашего питомца,очень приветливые и добрые врачи</p>
-                <span>Evgeny L.</span>
-                <P>Замечательная клиника, отдельное спасибо врачу Екатерине</P>
+        <section class="reviews">
+            <h2 class="reviews__title">Отзывы</h2>
+            <div class="reviews__list">
+                <div class="reviews__item">
+                    <span>Олег</span>
+                    <p>Хорошая клиника,всегда помогут и вылечат вашего питомца,очень приветливые и добрые врачи</p>
+                </div>
+
+                <div class="reviews__item">
+                    <span>Evgeny L.</span>
+                    <P>Замечательная клиника, отдельное спасибо врачу Екатерине</P>
+                </div>
             </div>
             <button type="button">Смотрите все отзывы</button>
         </section>
