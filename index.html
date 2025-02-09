@@ -4,31 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
-        <img class="header__logo" src="images/L_height.webp" width="200">
+    <header class="header container">
+        <img class="header__logo" src="images/logo.webp" alt="Здоровый хвостик" width="80" height="80">
         <h1 class="header__title">Здоровый хвостик</h1>
         <nav class="header__nav">
-            <ul class="header__nav-item">
-                <li class="header__nav-item"><a class="header__link" href="index.html">Главная</a></li>
-                <li class="header__nav-item"><a class="header__link" href="servise.html">Услуги</a></li>
-                <li class="header__nav-item"><a class="header__link" href="doctors.html">Врачи</a></li>
-                <li class="header__nav-item"><a class="header__link" href="catalog.html">Отзывы</a></li>
-                <li class="header__nav-item"><a class="header__link" href="#">Скидки</a></li>
-                <li class="header__nav-item"><a class="header__link" href="#">Прайс-лист</a></li>
-                <li class="header__nav-item"><a class="header__link" href="#">О-нас</a></li>
-                <li class="header__nav-item"><a class="header__link" href="#">Контакты</a></li>
+            <ul class="header__list">
+                <li class="header__item"><a class="header__item-link" href="index.html">Главная</a></li>
+                <li class="header__item"><a class="header__item-link" href="servise.html">Услуги</a></li>
+                <li class="header__item"><a class="header__item-link" href="doctors.html">Врачи</a></li>
+                <li class="header__item"><a class="header__item-link" href="catalog.html">Отзывы</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">Скидки</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">Прайс-лист</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">О-нас</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">Контакты</a></li>
             </ul>
         </nav>
-        <a href="#">Вход</a>
-        <a href="#">Регистрация</a>
+        <button class="header__login" type="button">Вход</button>
+        <button class="header__login" type="button"> Регистрация</button>
     </header>
 
-    <main class="main">
+    <main class="main container">
         <section class="our-advantages">
             <h2 class="our-advantages__title"> Наши преимущества</h2>
-            <ul class="our-advantages__item">
+            <ul class="our-advantages__list">
                 <li class="our-advantages__item">Высококласные врачи</li>
                 <li class="our-advantages__item">Точная диагностика</li>
                 <li class="our-advantages__item">современная лаборатория</li>
@@ -39,92 +41,117 @@
         </section>
 
         <section class="popular-services">
-            <h2 class="popular-services__headig"> Популярные услуги</h2>
-            <div class="popular-services__description">
-                <img class="popular-services__img" src="images/images.jpg" alt="images" width="150">
+            <h2 class="popular-services__title"> Популярные услуги</h2>
+            <div class="popular-services__div">
+                <img class="popular-services__image" src="images/ultrasound scan.jpg" alt="узи кошек и собак" width="200" height="150">
                 <p class="popular-services__text">Узи кошек и собак от 450 рублей</p>
             </div>
             <div class="popular-services__description">
-                <img class="popular-services__img" src="images/bbb.jpg" alt="images"width=150>
+                <img class="popular-services__image" src="images/vaccination.jpg" alt="вакцинация"width=200 height="150">
                 <p class="popular-services__text">Вакцинация от 1230 рублей</p>
             </div>
             <div class="popular-services__description">
-                <img class="popular-services__img" src="images/sss.jpg" alt="images"width=150>
+                <img class="popular-services__image" src="images/castration.jpg" alt="Кастрация и стерилизация"width=200 height="150">
                 <p class="popular-services__text">Кастрация и стерилизация от 1750 рублей</p>
             </div>
             <button class="button" type="button">Смотреть все услуги и цены</button>
         </section>
         <section class="stock">
             <h2 class="stock__title">Акции</h2>
-            <ul class="stock__item">
+            <ul class="stock__list">
                 <li class="stock__item">Стань донором крови-получи акцию в подарок</li>
                 <li class="stock__item">Пройди обследование перед кастрацией и стирилезацией и получи скидку в 400 рублей!</li>
             </ul>
         </section>
         <section class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
-            <div class="reviews__item">
-                <div class="reviews__item">
+                <div class="reviews__div">
                     <p class="reviews__name">Олег</p>
                     <p class="reviews__text">Хорошая клиника,всегда помогут и вылечат вашего питомца,очень приветливые и добрые врачи</p>
                 </div>
 
-                <div class="reviews__item">
+                <div class="reviews__div">
                     <p class="reviews__name">Evgeny L.</p>
                     <p class="reviews__text">Замечательная клиника, отдельное спасибо врачу Екатерине</p>
                 </div>
-            </div>
             <button class="button__main" type="button">Смотрите все отзывы</button>
         </section>
         <section class="new">
-            <h2 class="new__div">Новости</h2>
+            <h2 class="new__title">Новости</h2>
                 <div class="new__div">
-                    <img class="new__image" src="images/Без названия.jpg" alt="images"width=150>
+                    <img class="new__image" src="images/birthday.jpg" alt="дни рождения клиники" width=200 height="150">
                     <p class="new__text">Дни рождения клиники</p>
-                </div>   
+                </div>
         </section>
 
         <section class="specialists">
-            <h2 class="specialists__div">Специалисты</h2>
+            <h2 class="specialists__title">Специалисты</h2>
             <div class="specialists__div">
-                <img class="specialists__img" src="images/images (1).jpg" width="200"> 
+                <img class="specialists__image" src="images/doctor 1.jpg" alt="Юлия Сергеевна" width="150" height="190"> 
                 <p class="specialists__name">Юлия Сергеевна</p>
-                <img class="specialists__img" src="images/images (2).jpg" width="200">
-                <p class="specialists__img">Екатерина Алексеевна</p> 
+                <img class="specialists__image" src="images/doctor 2.jpg" alt="Екатерина Алексеевна" width="150" height="190">
+                <p class="specialists__name">Екатерина Алексеевна</p> 
             </div> 
         </section>
     </main>
-    <footer class="container">
-        <section class="footer">
+    <footer class="footer container">
+        <div class="footer__div">
             <a class="footer__link" href="#">Адрес</a>
             <a class="footer__link" href="#">Телефон</a>
             <a class="footer__link" href="#">Email</a>
-        </section>
-        <section class="footer__work-schedule">
+        </div>
+        <div class="footer__div">
             <a class="footer__work-schedule" href="#">График работы</a>
+        </div>
+        <div class="footer__div">
+            <a class="footer__link" href="#">VK</a>
+            <a class="footer__link" href="#">WhatsApp</a>
+            <a class="footer__link" href="#">Telegram</a>
+        </div>
+    </footer>
+    <!-- Формы -->
+    <div style="display: none" class="dialog dialog--layout">
+        <!-- Форма "Регистрация" -->
+        <section style="display: none" class="popup">
+            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
+                    height="24"></button>
+            <h2 class="popup__title popup__title--registration">Регистрация</h2>
+            <form class="popup__form form" action="/" method="post">
+                <input class="form__field" type="text" name="name" placeholder="Имя" required>
+                <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                <fieldset class="form__fieldset">
+                    <div class="form__field-block">
+                        <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                        <span class="form__field-alert">Минимум 8 символов</span>
+                    </div>
+                    <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
+                        required>
+                </fieldset>
+                <fieldset class="form__buttons">
+                    <button class="button button--accent" type="submit">Зарегистрироваться</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+                <button class="button button--link" type="button">У меня уже есть аккаунт</button>
+            </form>
         </section>
-        <section class="footer">
-            <a class="footer__VK" href="#">VK</a>
-            <a class="footer__whatsapp" href="#">WhatsApp</a>
-            <a class="footer__telegram" href="#">Telegram</a>
+        <!--/ Форма "Регистрация" -->
+        <!-- Форма "Войти" -->
+        <section style="display: none" class="popup">
+            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
+                    height="24"></button>
+            <h2 class="popup__title">Войти</h2>
+            <form class="popup__form form" action="/" method="post">
+                <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                <fieldset class="form__buttons">
+                    <button class="button button--accent" type="submit">Войти</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+                <button class="button button--link" type="button">У меня еще нет аккаунта</button>
+            </form>
         </section>
-    </footer class="container">
-    <section class="footer">
-        <h2 class="footer__entrance">Вход</h2>
-        <form action="#">
-            <input type="Логин или email" name="Логин или email" placeholder="Логин или email">
-            <input type="Пороль" name="Пороль" placeholder="Пороль">
-            <button>Войти</button>
-        </form>
-    </section>
-    <section class="footer">
-        <h2 class="footer__registration">Регистрация</h2>
-        <form action="#">
-            <input type="Мобильный телефон или email" name="мобильный телефон или email" placeholder="мобильный телефон или email">
-            <input type="Пороль для входа" name="Пороль для входа" placeholder="Пороль для входа">
-            <input type="Подтвердить пороль" name="Подтвердить пороль" placeholder="Подтвердить пороль"> 
-            <button>Зарегистрироваться</button>
-        </form>
-    </section>
+        <!--/ Форма "Войти" -->
+    </div>
+    <!--/ Формы -->
 </body>
 </html>
