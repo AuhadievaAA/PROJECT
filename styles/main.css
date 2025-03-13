@@ -1,0 +1,79 @@
+.reviews__button {
+    text-align: center;
+}
+
+.our-advantages {
+    gap: 10px;
+}
+
+.specialists__div {
+    width: 350px;
+    padding: 15px;
+    background-color: rgb(208, 231, 250);
+    color: black;
+    box-shadow: 1px 2px 20px 5px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.specialists__name {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.specialists__container {
+    display: flex;
+    justify-content: space-around;
+}
+.popular-services__div {
+    width: 350px;
+    padding: 15px;
+    background-color: rgb(208, 231, 250);
+    color: black;
+    box-shadow: 1px 2px 20px 5px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.popular-services__container {
+    display: flex;
+    justify-content: space-around;
+}
+.new__div {
+    width: 350px;
+    padding: 15px;
+    background-color: rgb(208, 231, 250);
+    color: black;
+    box-shadow: 1px 2px 20px 5px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.new__div__container {
+    display: flex;
+    justify-content: space-around;
+}
+.our-advantages__title{
+    text-align: center;
+}
+.stock__title {
+    text-align: center;
+}

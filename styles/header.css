@@ -6,11 +6,11 @@ justify-content: space-between;
 padding-top: auto;
 padding-bottom: auto;
 
-background-color: hsl(69, 100%, 50%);
+background-color: hsl(184, 100%, 70%);
 }
 
 .header__nav {
-    background-color: rgb(24, 204, 117);
+    background-color: rgb(255, 255, 255);
     margin-top: 5px;
     margin-bottom: auto;
     margin-right: 10px;
@@ -35,7 +35,7 @@ background-color: hsl(69, 100%, 50%);
 
     font-size: 18px;
     font-weight: 400;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 .header__item-link--active {
@@ -45,7 +45,7 @@ background-color: hsl(69, 100%, 50%);
 
     font-size: 18px;
     font-weight: 400;
-    color: rgb(205, 211, 215) ;
+    color: rgb(255, 255, 255) ;
 }
 
 .header__logo {
@@ -74,7 +74,7 @@ background-color: hsl(69, 100%, 50%);
     margin-bottom: auto;
     border-radius: 15px;
 
-    background-color: rgb(39, 231, 138);
+    background-color: rgb(248, 248, 248);
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
