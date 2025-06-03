@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ветеринарная клиника</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+        <div class="content"></div>
     <header class="header container">
         <img class="header__logo" src="images/logo.webp" alt="Здоровый хвостик" width="80" height="80">
         <h1 class="header__title">Здоровый хвостик</h1>
@@ -26,74 +32,72 @@
             </ul>
         </nav>
         <button class="header__login" type="button">Вход</button>
-        <button class="header__login" type="button"> Регистрация</button>
     </header>
 
     <main class="main container">
         <section class="our-advantages">
-            <h2 class="our-advantages__title"> Наши преимущества</h2>
-            <div class="our-advantages__container">
-                <div class="our-advantages__div">
-                    <li class="our-advantages__item">Высококласные врачи</li>
-                </div>
-                <div class="our-advantages__div">
+                <h2 class="our-advantages__title">Наши преимущества</h2>
+                <ul class="our-advantages__list">
+                    <li class="our-advantages__item">Высококлассные врачи</li>
                     <li class="our-advantages__item">Точная диагностика</li>
-                </div>
-                <div class="our-advantages__div">
-                    <li class="our-advantages__item">современная лаборатория</li>
-                </div>
-                <div class="our-advantages__div">
                     <li class="our-advantages__item">Стационарное лечение</li>
-                </div>
-                <div class="our-advantages__div">
-                    <li class="our-advantages__item">Ветеринарная скорая</li>
-                </div>
-                <div class="our-advantages__div">
                     <li class="our-advantages__item">Проведение тяжелых операций</li>
-                </div>
-            </div>
-        </section>
+                    <li class="our-advantages__item">Собственная лаборатория</li>
+                    <li class="our-advantages__item">Ветеринарная скорая</li>
+                </ul>
+            </section>
 
-        <section class="popular-services">
+        <section class="popular-services" id="cards">
             <h2 class="popular-services__title"> Популярные услуги</h2>
             <div class="popular-services__container">
-                <div class="popular-services__div">
-                    <img class="popular-services__image" src="images/ultrasound scan.jpg" alt="узи кошек и собак"
+                <!-- <div class="popular-services__div">
+                    <img class="popular-services__image" src="images/UltrasoundScan.jpg" alt="узи кошек и собак"
                         width="200" height="150">
-                    <p class="popular-services__text">Узи кошек и собак от 450 рублей</p>
+                    <p class="popular-services__text">Описание 1</p>
                 </div>
                 <div class="popular-services__div">
                     <img class="popular-services__image" src="images/vaccination.jpg" alt="вакцинация" width=200
                         height="150">
-                    <p class="popular-services__text">Вакцинация от 1230 рублей</p>
+                    <p class="popular-services__text">Описание 2</p>
                 </div>
                 <div class="popular-services__div">
                     <img class="popular-services__image" src="images/castration.jpg" alt="Кастрация и стерилизация"
                         width=200 height="150">
-                    <p class="popular-services__text">Кастрация и стерилизация от 1750 рублей</p>
-                </div>
+                    <p class="popular-services__text">Описание 3</p>
+                </div> -->
             </div>
             <div class="reviews__button">
                 <button class="button" type="button">Смотреть все услуги и цены</button>
             </div>
         </section>
-        <section class="stock">
+        <section class="stock card--slider swiper">
             <h2 class="stock__title">Акции</h2>
-            <div class="stock__container">
-                <div class="stock__div">
+            <div class="stock__container card__list--slider swiper-wrapper">
+                <div class="stock__div swiper-slide">
                     <img class="stock__image" src="images/stock1.png" alt="донором" width="200" height="150">
                     <p class="stock__item">Стань донором крови-получи акцию в подарок</p>
                 </div>
-                <div class="stock__div">
+                <div class="stock__div swiper-slide">
                     <img class="stock__image" src="images/stock2.png" alt="обследование" width="200" height="150">
                     <p class="stock__item">Пройди обследование перед кастрацией и стирилезацией и получи скидку в 400
                         рублей!</p>
                 </div>
-                <div class="stock__div">
+                <div class="stock__div swiper-slide">
                     <img class="stock__image" src="images/stock3.png" alt="вакцинация" width="200" height="150">
                     <p class="stock__item">Бесплатная вакцинация для новых клиентов</p>
                 </div>
+                <div class="stock__div swiper-slide">
+                    <img class="stock__image" src="images/stock4.png" alt="вакцинация" width="200" height="150">
+                    <p class="stock__item">Программа лояльности: накапливай баллы баллы за услуги и получай скидки или бесплатные процедуры</p>
+                </div>
+                <div class="stock__div swiper-slide">
+                    <img class="stock__image" src="images/stock5.png" alt="вакцинация" width="200" height="150">
+                    <p class="stock__item">Скидки для многопитомных семей</p>
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </section>
         <section class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
@@ -102,8 +106,7 @@
                     <img class="reviews__image" src="images/reviews2.png" alt="Олег" width="100" height="50">
                     <div class="reviews__decr">
                         <p class="reviews__name">Олег</p>
-                        <p class="reviews__text">Хорошая клиника,всегда помогут и вылечат вашего питомца,очень
-                            приветливые и добрые врачи</p>
+                        <p class="reviews__text">Хорошая клиника,всегда помогут и вылечат вашего питомца,очень приветливые и добрые врачи, особенную благодарность хочу выразить Юлие Сергеевне, спасшей жизнь нашему коту.</p>
                     </div>
 
                 </div>
@@ -111,7 +114,7 @@
                     <img class="reviews__image" src="images/reviews1.png" alt="евгений" width="100" height="50">
                     <div class="reviews__decr">
                     <p class="reviews__name">Evgeny L.</p>
-                    <p class="reviews__text">Замечательная клиника, отдельное спасибо врачу Екатерине</p>
+                    <p class="reviews__text">Отличная ветеринарная клиника! Врачи очень внимательные и профессиональные, всегда готовы ответить на вопросы и дать полезные рекомендации. Обслуживание на высшем уровне, а цены вполне разумные. </p>
                 </div>
                 </div>
             </div>
@@ -122,25 +125,36 @@
         <section class="new">
             <h2 class="new__title">Новости</h2>
             <div class="new__div__container">
-                <div class="new__div">
-                    <img class="new__image" src="images/birthday.jpg" alt="дни рождения клиники" width=200 height="150">
-                    <p class="new__text">Дни рождения клиники</p>
-                </div>
-                <div class="new__div">
-                    <img class="new__image" src="images/new1.png" alt="оборудования" width="200" height="150">
-                    <p class="new__text">Открытие нового диагностического оборудования</p>
-                </div>
-                <div class="new__div">
-                    <img class="new__image" src="images/new2.png" alt="чипирования" width="200" height="150">
-                    <p class="new__text">Программа чипирования домашних животных</p>
-                </div>
-                <div class="new__div">
-                    <img class="new__image" src="images/new3.png" alt="Партнерство" width="200" height="150">
-                    <p class="new__text">Партнерство с местными приютами</p>
-                </div>
-                <div class="new__div">
-                    <img class="new__image" src="images/new4.png" alt="консультаций" width="200" height="150">
-                    <p class="new__text">Запуск онлайн-консультаций</p>
+                <button class="new__button-left"> <img class="new__image-button"
+                            src="images/icon/arrow-left.svg" width="50" height="50" alt="Стрелка влево"></button>
+                <div class="new__wrap">       
+                    <div class="new__div">
+                        <img class="new__image" src="images/birthday.jpg" alt="дни рождения клиники" width=200 height="150">
+                        <p class="new__text">Дни рождения клиники</p>
+                    </div>
+                    <div class="new__div">
+                        <img class="new__image" src="images/new1.png" alt="оборудования" width="200" height="150">
+                        <p class="new__text">Открытие нового диагностического оборудования</p>
+                    </div>
+                    <div class="new__div">
+                        <img class="new__image" src="images/new2.png" alt="чипирования" width="200" height="150">
+                        <p class="new__text">Программа чипирования домашних животных</p>
+                    </div>
+                    <div class="new__div">
+                        <img class="new__image" src="images/new3.png" alt="Партнерство" width="200" height="150">
+                        <p class="new__text">Партнерство с местными приютами</p>
+                    </div>
+                    <div class="new__div">
+                        <img class="new__image" src="images/new4.png" alt="консультаций" width="200" height="150">
+                        <p class="new__text">Запуск онлайн-консультаций</p>
+                    </div>
+                    <div class="new__div">
+                        <img class="new__image" src="images/new5.png" alt="консультаций" width="200" height="150">
+                        <p class="new__text">День открытых дверей в нашей клинике</p>
+                    </div>
+
+                <button class="new__button-right"> <img class="new__image-button"
+                            src="images/icon/arrow-right.svg" width="30" height="30" alt="Стрелка влево"></button>
                 </div>
             </div>
         </section>
@@ -149,77 +163,109 @@
             <h2 class="specialists__title">Специалисты</h2>
             <div class="specialists__container">
                 <div class="specialists__div">
-                    <img class="specialists__image" src="images/doctor 1.jpg" alt="Юлия Сергеевна" width="150"
+                    <img class="specialists__image" src="images/doctor1.jpg" alt="Юлия Сергеевна" width="150"
                         height="190">
                     <p class="specialists__name">Юлия Сергеевна</p>
                 </div>
                 <div class="specialists__div">
-                    <img class="specialists__image" src="images/doctor 2.jpg" alt="Екатерина Алексеевна" width="150"
+                    <img class="specialists__image" src="images/doctor2.jpg" alt="Екатерина Алексеевна" width="150"
                         height="190">
                     <p class="specialists__name">Екатерина Алексеевна</p>
+                </div>
+                <div class="specialists__div">
+                    <img class="specialists__image" src="images/doctor3.png" alt="Екатерина Алексеевна" width="150"
+                        height="190">
+                    <p class="specialists__name">Виктория Андреевна</p>
+                </div>
+                <div class="specialists__div">
+                    <img class="specialists__image" src="images/doctor4.png" alt="Екатерина Алексеевна" width="150"
+                        height="190">
+                    <p class="specialists__name">Эмилия Даниловна</p>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer container">
         <div class="footer__div">
+            <h1 class="footer__title">Здоровый хвостик</h1>
+            <p class="footer__div-text">Сайт создан Аухадиевой Алией, Меркуловой Юлией и Чернышовой Екатериной группа ВТ-21</p>
+        </div>
+        <div class="footer__div">
             <a class="footer__link" href="#">Адрес</a>
             <a class="footer__link" href="#">Телефон</a>
             <a class="footer__link" href="#">Email</a>
-        </div>
-        <div class="footer__div">
-            <a class="footer__work-schedule" href="#">График работы</a>
         </div>
         <div class="footer__div">
             <a class="footer__link" href="#">VK</a>
             <a class="footer__link" href="#">WhatsApp</a>
             <a class="footer__link" href="#">Telegram</a>
         </div>
+        
     </footer>
     <!-- Формы -->
-    <div style="display: none" class="dialog dialog--layout">
-        <!-- Форма "Регистрация" -->
-        <section style="display: none" class="popup">
-            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
-                    height="24"></button>
-            <h2 class="popup__title popup__title--registration">Регистрация</h2>
-            <form class="popup__form form" action="/" method="post">
-                <input class="form__field" type="text" name="name" placeholder="Имя" required>
-                <input class="form__field" type="email" name="email" placeholder="Логин" required>
-                <fieldset class="form__fieldset">
-                    <div class="form__field-block">
-                        <input class="form__field" type="password" name="password" placeholder="Пароль" required>
-                        <span class="form__field-alert">Минимум 8 символов</span>
+        <div class="dialog dialog--layout" hidden>
+            <div class="dialog__content">
+                <button class="popup__close" type="button" data-close><img src="images/icon/close.svg"
+                        alt="Закрыть окно" width="24" height="24"></button>
+                <!-- Форма "Войдите в профиль" -->
+                <section class="popup" id="popup-select">
+                    <h2 class="popup__title">Войдите в профиль</h2>
+                    <p class="popup__desc">Вносить информацию могут только зарегистрированные пользователи.</p>
+                    <div class="popup__buttons">
+                        <button class="button button--accent" type="button" data-login>Войти</button>
+                        <button class="button" type="button" data-registration>Регистрация</button>
                     </div>
-                    <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
-                        required>
-                </fieldset>
-                <fieldset class="form__buttons">
-                    <button class="button button--accent" type="submit">Зарегистрироваться</button>
-                    <button class="button" type="button">Отмена</button>
-                </fieldset>
-                <button class="button button--link" type="button">У меня уже есть аккаунт</button>
-            </form>
-        </section>
-        <!--/ Форма "Регистрация" -->
-        <!-- Форма "Войти" -->
-        <section style="display: none" class="popup">
-            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
-                    height="24"></button>
-            <h2 class="popup__title">Войти</h2>
-            <form class="popup__form form" action="/" method="post">
-                <input class="form__field" type="email" name="email" placeholder="Логин" required>
-                <input class="form__field" type="password" name="password" placeholder="Пароль" required>
-                <fieldset class="form__buttons">
-                    <button class="button button--accent" type="submit">Войти</button>
-                    <button class="button" type="button">Отмена</button>
-                </fieldset>
-                <button class="button button--link" type="button">У меня еще нет аккаунта</button>
-            </form>
-        </section>
-        <!--/ Форма "Войти" -->
-    </div>
-    <!--/ Формы -->
+                </section>
+                <!--/ Форма "Войдите в профиль" -->
+                <!-- Форма "Регистрация" -->
+                <section class="popup" id="popup-registration" hidden>
+                    <h2 class="popup__title popup__title--registration">Регистрация</h2>
+                    <form class="popup__form form" action="/" method="post" id="registration-form">
+                        <input class="form__field" type="text" name="username" placeholder="Имя" id="username" required>
+                        <input class="form__field" type="text" name="login" placeholder="Логин" id="login" required>
+                        <input class="form__field" type="email" name="email" placeholder="Адрес электронной почты"
+                            id="email" required>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field-block">
+                                <input class="form__field" type="password" name="password" placeholder="Пароль"
+                                    id="password" required>
+                                <span class="form__field-alert">Минимум 8 символов</span>
+                            </div>
+                            <input class="form__field" type="password" name="repeat-password"
+                                placeholder="Повторите пароль" id="confirm-password" required>
+                        </fieldset>
+                        <p id="error-message" class="error-message"></p>
+                        <fieldset class="form__buttons">
+                            <button class="button button--accent" type="submit">Зарегистрироваться</button>
+                            <button class="button button--close" data-close type="button">Отмена</button>
+                        </fieldset>
+                        <button class="button button--link" data-login type="button">У меня уже есть аккаунт</button>
+                    </form>
+                </section>
+                <!--/ Форма "Регистрация" -->
+                <!-- Форма "Войти" -->
+                <section class="popup" id="popup-login" hidden>
+                    <h2 class="popup__title">Войти</h2>
+                    <form class="popup__form form" action="/" method="post" id="login-form">
+                        <input class="form__field" type="text" name="login" placeholder="Логин" id="userlogin" required>
+                        <input class="form__field" type="password" name="current-password" placeholder="Пароль"
+                            id="userpassword" required>
+                        <p id="error-message-login" class="error-message"></p>
+                        <fieldset class="form__buttons">
+                            <button class="button button--accent" type="submit">Войти</button>
+                            <button class="button button--close" data-close type="button">Отмена</button>
+                        </fieldset>
+                        <button class="button button--link" data-registration type="button">У меня еще нет
+                            аккаунта</button>
+                    </form>
+                </section>
+                <!--/ Форма "Войти" -->
+            </div>
+        </div>
+        <!--/ Формы -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> </script>
+        <script src="js/script.js"></script>
+
 </body>
 
 </html>

@@ -10,3 +10,9 @@
 @import "footer.css";
 /* Подключение стилей относящихся к main */
 @import "main.css";
+
+@import "popup.css";
+@import "typography.css";
+@import "form.css";
+@import "preloader.css";
+@import "animation.css";

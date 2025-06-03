@@ -1,0 +1,34 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(184, 100%, 70%);
+    padding: 20px;
+}
+
+.footer__div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #1064bd;
+}
+
+.footer__item-link:hover {
+    text-decoration: underline;
+}
+
+.footer__title {
+    margin: 0;
+
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+.footer__div-text {
+    font-size: 14px;
+    color: #6c757d;
+}

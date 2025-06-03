@@ -16,4 +16,59 @@
 
     cursor: pointer;
     text-align: center;
+
+   transition: background-color 0.4s ease-out, color 0.4s ease-out;
+}
+
+.button:hover,
+.button:focus {
+    color: #ffffff;
+    background-color: rgb(146, 237, 255);
+}
+
+.button--accent {
+    color: rgb(0, 0, 0);
+
+    background-color: rgb(146, 237, 255);
+}
+
+.button--accent:hover,
+.button--accent:focus {
+    color: rgb(139, 139, 243);
+    background-color: #ffffff;
+}
+
+.button--link {
+    width: fit-content;
+    margin: 0 auto;
+
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 8px;
+
+    border: none;
+    background-color: transparent;
+
+    transition: text-decoration-color 0.3s;
+}
+
+.button--link:hover,
+.button--link:focus {
+    color: #a0cefc;
+    background-color: #ffffff;
+
+    text-decoration-color: transparent;
+}
+
+/* Формы */
+.form__field {
+    font-size: 16px;
+
+    background-color: transparent;
+    border: 1px solid rgba(145, 150, 161, 0.4);
+    border-radius: 16px;
+}
+
+.reviews__button {
+    text-align: center;
 }

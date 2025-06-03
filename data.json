@@ -1,0 +1,23 @@
+[
+    {
+         "description": "Узи кошек и собак от 450 рублей",
+         "image": "images/UltrasoundScan.jpg",
+         "imageWidth": 120,
+         "imageHeight": 120,
+         "imageAlt": "узи кошек и собак"
+     },
+     {
+        "description": "Вакцинация от 1230 рублей",
+         "image": "images/vaccination.jpg",
+         "imageWidth": 120,
+         "imageHeight": 120,
+         "imageAlt": "вакцинация"
+     },
+     {
+        "description": "Кастрация и стерилизация от 1750 рублей",
+         "image": "images/castration.jpg",
+         "imageWidth": 120,
+         "imageHeight": 120,
+         "imageAlt": "узи кошек и собак"
+     }
+ ]
